@@ -2,7 +2,7 @@
 
 import { Contexto } from "@/context/Tema";
 import Home from "@/pages/home";
-import { createContext, useState } from "react";
+import { useState } from "react";
 
 
 

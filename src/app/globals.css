@@ -25,10 +25,37 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+/* COMPONENTS */
+
 .header {
   @apply flex justify-between m-4 hover:cursor-pointer p-4
 }
 
 .menu {
-  @apply flex bg-zinc-600 h-screen p-6 text-white
+  @apply flex flex-col pt-8 pb-4 px-4 text-white bg-zinc-600 h-screen transition-all duration-300 ease-in-out
+}
+
+.menu-transicao {
+  @apply duration-200 ease-out
+}
+
+.botao {
+  @apply hover:bg-zinc-500 h-fit  p-1.5   rounded-md cursor-pointer duration-200 ease-in;
+}
+
+/* PAGES */
+.main-page-dark {
+  @apply bg-black text-white flex duration-200 ease-in
+}
+
+.main-page-white {
+  @apply bg-white text-black flex duration-200 ease-in
+}
+
+.menu-page {
+  @apply flex 
+}
+
+.header-page {
+  @apply flex flex-1 h-fit
 }

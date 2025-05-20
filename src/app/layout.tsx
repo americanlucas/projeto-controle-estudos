@@ -26,7 +26,7 @@ export default function RootLayout({
 
   
   return (
-    <html lang="en">
+    <html className="h-screen overflow-hidden" lang="en">
       <body>
         {children}
       </body>
