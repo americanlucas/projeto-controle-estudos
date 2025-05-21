@@ -16,7 +16,7 @@ export default function Home () {
                 </Perfil.Provider>
             </div>
             <div className="header-page">
-                <Header titulo='Controle de Estudos'/>
+                <Header titulo="Controle de Estudos"/>
             </div>
         </main>
     )

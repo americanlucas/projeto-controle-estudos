@@ -2,7 +2,11 @@ import { Contexto } from "@/context/Tema";
 import { Moon } from "lucide-react"
 import { useContext, useState } from "react"
 
-export default function Header (props: any) {
+interface HeaderProps {
+    titulo: string,
+}
+
+export default function Header (props: HeaderProps) {
     const {corFundo, setCorFundo} = useContext(Contexto);
     
     return (
