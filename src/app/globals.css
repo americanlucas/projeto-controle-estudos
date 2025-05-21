@@ -45,11 +45,11 @@
 
 /* PAGES */
 .main-page-dark {
-  @apply bg-black text-white flex duration-200 ease-in
+  @apply bg-gradient-to-br from-zinc-950 to-slate-900 text-white flex duration-200 ease-in
 }
 
 .main-page-white {
-  @apply bg-white text-black flex duration-200 ease-in
+  @apply bg-gradient-to-br from-white to-zinc-300 text-black flex duration-200 ease-in
 }
 
 .menu-page {
