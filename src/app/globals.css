@@ -32,7 +32,7 @@
 }
 
 .menu {
-  @apply flex flex-col pt-8 pb-4 px-4 text-white bg-zinc-600 h-screen transition-all duration-200 ease-in-out
+  @apply flex flex-col pt-8 pb-4 px-4 text-white h-screen transition-all duration-300 ease-in-out
 }
 
 .menu-transicao {
@@ -49,7 +49,7 @@
 }
 
 .main-page-white {
-  @apply bg-gradient-to-br from-white to-zinc-300 text-black flex duration-200 ease-in
+  @apply bg-gradient-to-tl from-zinc-200 to-slate-500/20 text-black flex duration-200 ease-in
 }
 
 .menu-page {
