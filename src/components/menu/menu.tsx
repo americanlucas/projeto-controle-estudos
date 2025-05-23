@@ -1,20 +1,21 @@
 import { useContext, useEffect } from "react";
-import { Contexto } from "@/context/Tema";
 import { MenuIcon } from "lucide-react";
 import { Perfil } from "@/context/PerfilDoUsuario";
 import { ColapsaMenu } from "@/context/ColapsaMenu";
 import MenuUsuario from "./menu_usuario";
 import { ColapsaItem } from "@/context/ColapsaItem";
 import MenuPages from "./menu-page";
+import ContextoMenu from "@/context/ContextoMenu";
+import Tema from "@/context/Tema";
 
 interface Menu {
     titulo: string
 }
 
 export default function Menu(props:Menu) {
-    const {corFundo} = useContext(Contexto)
-    const {colapsaItem, setColapsaItem} = useContext(ColapsaItem)
-    const {colapsaMenu, setColapsaMenu} = useContext(ColapsaMenu)
+    const {corFundo} = useContext(Tema)
+    const {colapsaItem, setColapsaItem} = useContext(ContextoMenu)
+    const {colapsaMenu, setColapsaMenu} = useContext(ContextoMenu)
 
 
     useEffect (()=>{

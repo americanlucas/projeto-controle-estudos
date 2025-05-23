@@ -1,3 +1,22 @@
-import { createContext } from "react";
+import { createContext, useContext, useState } from "react";
 
-export const Contexto = createContext({} as any);
+interface TemaProps {
+    corFundo?: boolean,
+    setCorFundo?: any
+}
+
+const Tema = createContext <TemaProps>({} as any);
+
+export function TemaProvider (props: any) {
+
+    const [corFundo, setCorFundo] = useState(true)
+    return(
+        <Tema.Provider value={{
+            corFundo, setCorFundo
+        }}>
+            {props.children}
+        </Tema.Provider>
+    )
+}
+
+export default Tema

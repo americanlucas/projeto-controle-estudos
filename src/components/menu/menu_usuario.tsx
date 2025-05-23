@@ -1,4 +1,5 @@
 import { ColapsaMenu } from "@/context/ColapsaMenu"
+import ContextoMenu from "@/context/ContextoMenu"
 import { Perfil } from "@/context/PerfilDoUsuario"
 import { ChevronsUpDown } from "lucide-react"
 import Link from "next/link"
@@ -10,8 +11,8 @@ interface MenuUsuario {
 }
 
 export default function MenuUsuario (props: MenuUsuario) {
-    let {LinkImagem, NomeUsuario} = useContext(Perfil)
-    const {colapsaMenu, setColapsaMenu} = useContext(ColapsaMenu)
+    let {LinkImagem, NomeUsuario} = useContext(ContextoMenu)
+    const {colapsaMenu, setColapsaMenu} = useContext(ContextoMenu)
 
     return(
         <Link href={`/${props.url}`} className={`${colapsaMenu && "border-t-[0.3px] border-zinc-500"} flex justify-around items-center text-center pt-3 cursor-pointer`}>

@@ -1,19 +1,17 @@
 "use client"
 
-import { Contexto } from "@/context/Tema";
+import { TemaProvider } from "@/context/Tema";
 import Home from "@/pages/home";
 import { useState } from "react";
 
 
 
 export default function App() {
-    const [corFundo, setCorFundo] = useState(true)
-
   return (
     <>
-      <Contexto.Provider value={{corFundo, setCorFundo}}>
+      <TemaProvider>
         <Home/>
-      </Contexto.Provider>
+      </TemaProvider>
     </>
   );
 }

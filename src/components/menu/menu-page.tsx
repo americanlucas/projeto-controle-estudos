@@ -4,14 +4,15 @@ import { BookCopy, ChartNoAxesCombined, PlusIcon } from "lucide-react"
 import { useContext } from "react"
 import MenuItem from "./menu_item"
 import MenuTopico from "./menu_topico"
+import ContextoMenu from "@/context/ContextoMenu"
 
 interface MenuPage {
     titulo: string
 }
 
 export default function MenuPages(props: MenuPage) {
-    const {colapsaMenu, setColapsaMenu} = useContext(ColapsaMenu)
-    const {colapsaItem, setColapsaItem} = useContext(ColapsaItem)
+    const {colapsaMenu, setColapsaMenu} = useContext(ContextoMenu)
+    const {colapsaItem, setColapsaItem} = useContext(ContextoMenu)
 
     return(
         <div className="flex flex-col mb-4">
