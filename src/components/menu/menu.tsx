@@ -1,9 +1,6 @@
 import { useContext, useEffect } from "react";
 import { MenuIcon } from "lucide-react";
-import { Perfil } from "@/context/PerfilDoUsuario";
-import { ColapsaMenu } from "@/context/ColapsaMenu";
 import MenuUsuario from "./menu_usuario";
-import { ColapsaItem } from "@/context/ColapsaItem";
 import MenuPages from "./menu-page";
 import ContextoMenu from "@/context/ContextoMenu";
 import Tema from "@/context/Tema";

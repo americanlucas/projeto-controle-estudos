@@ -1,7 +1,6 @@
-
 import Tema from "@/context/Tema";
 import { Moon } from "lucide-react"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 
 interface HeaderProps {
     titulo: string,
