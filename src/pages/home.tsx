@@ -1,4 +1,5 @@
 import Header from "@/components/header/header";
+import MainHome from "@/components/main/MainHome";
 import Menu from "@/components/menu/menu";
 import { MenuProvider } from "@/context/ContextoMenu";
 import Tema from "@/context/Tema";
@@ -14,8 +15,13 @@ export default function Home () {
                     <Menu titulo="Study Menu"/>
                 </MenuProvider>
             </div>
-            <div className="header-page">
-                <Header titulo="Controle de Estudos"/>
+            <div className="flex flex-col w-full">                
+                <div className="header-page">
+                    <Header titulo="Controle de Estudos"/>
+                </div>
+                <div className="flex flex-col justify-center h-full">
+                    <MainHome/>
+                </div>
             </div>
         </main>
     )

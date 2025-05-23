@@ -45,11 +45,11 @@
 
 @layer pages {
   .main-page-dark {
-    @apply bg-gradient-to-br from-zinc-950 to-slate-900 text-white flex duration-200 ease-in
+    @apply bg-gradient-to-br from-zinc-950 to-slate-900 text-white flex duration-200 ease-in 
   }
 
   .main-page-white {
-    @apply bg-gradient-to-tl from-zinc-200 to-slate-500/20 text-black flex duration-200 ease-in
+    @apply bg-gradient-to-tl from-zinc-200 to-slate-500/20 text-black flex duration-200 ease-in 
   }
 
   .menu-page {
@@ -57,6 +57,6 @@
   }
 
   .header-page {
-    @apply flex flex-1 h-fit
+    @apply flex 
   }
 }
